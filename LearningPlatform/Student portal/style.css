@@ -1,0 +1,205 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.page-title {
+  font-size: 1.25rem;
+}
+
+/* Login Box */
+.auth-box {
+  max-width: 400px;
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+.auth-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.password-toggle {
+  position: relative;
+  margin-top: -2.2rem;
+  margin-left: calc(100% - 30px);
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn.primary {
+  background-color: #1e3a8a;
+  color: white;
+}
+.btn.secondary {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+}
+.btn.small {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+}
+.btn.mini {
+  padding: 0.2rem 0.5rem;
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  display: none;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  display: none;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.dashboard-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.nav-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.nav-btn.active {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+/* Sections */
+.section-title {
+  margin-bottom: 1rem;
+}
+.course-grid, .lecture-list, .assignment-list, .quiz-list, .notification-list {
+  display: grid;
+  gap: 1rem;
+}
+.course-card, .lecture-card, .assignment-card, .quiz-card, .notification-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.course-badge {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: white;
+}
+.course-badge.in-progress {
+  background-color: #f59e0b;
+}
+.course-badge.completed {
+  background-color: #10b981;
+}
+.progress-bar {
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 10px;
+}
+.progress {
+  background: #1e3a8a;
+  height: 10px;
+}
+.progress-text {
+  font-size: 0.8rem;
+}
+
+/* Notifications */
+.notification-card.unread {
+  border-left: 4px solid #1e3a8a;
+  background-color: #f0f4ff;
+}
+
+/* Profile */
+.profile-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.profile-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.profile-avatar i {
+  font-size: 3rem;
+  color: #1e3a8a;
+}
+.profile-info h3 {
+  margin-bottom: 0.3rem;
+}
+.profile-details {
+  margin-top: 1.5rem;
+}
+.profile-field {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e3a8a;
+  color: white;
+  margin-top: 3rem;
+}
